@@ -7,7 +7,7 @@ const config = [
     input: 'build/index.js',
     output: {
       file: './dist/mailer.js',
-      format: 'cjs',
+      format: 'esm',
       sourcemap: true,
     },
     // external: ['axios', 'os', 'url'],

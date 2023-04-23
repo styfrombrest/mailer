@@ -1,2 +1,2 @@
-export * as sendMail from "./sendMail";
-export * as sendMailHTML from "./sendMailHTML";
+export { sendMail } from "./sendMail";
+export { sendMailHTML } from "./sendMailHTML";

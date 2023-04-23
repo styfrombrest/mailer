@@ -1,5 +1,3 @@
-const sendMailHTML = (args: string[]): void => {
+export const sendMailHTML = (args: string[]): void => {
   console.log('sendMailHTML:', args)
 }
-
-export default sendMailHTML;

@@ -1,2 +1,1 @@
-declare const sendMail: (args: string[]) => void;
-export default sendMail;
+export declare const sendMail: (args: string[]) => void;

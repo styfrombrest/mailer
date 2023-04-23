@@ -1,5 +1,5 @@
 {
-  "name": "mailer",
+  "name": "@styfrombrest/mailer",
   "version": "1.0.0",
   "description": "NodeJS mailer",
   "type": "module",

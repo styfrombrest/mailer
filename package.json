@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "NodeJS mailer",
   "type": "module",
-  "main": "build/mailer.js",
-  "types": "build/mailer.d.ts",
+  "main": "dist/mailer.js",
+  "types": "dist/mailer.d.ts",
   "files": [
-    "build/mailer.d.ts",
-    "build/mailer.js",
-    "build/mailer.js.map"
+    "dist/mailer.d.ts",
+    "dist/mailer.js",
+    "dist/mailer.js.map"
   ],
   "scripts": {
     "_clear": "rimraf build/compiled/*",

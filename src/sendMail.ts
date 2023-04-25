@@ -30,7 +30,6 @@ export const sendMail = (config: ISendmailerOptions, mailOptions: IMailOptions):
 
       transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-          console.error(error);
           reject(error);
         }
 

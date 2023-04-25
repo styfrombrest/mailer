@@ -1,8 +1,8 @@
-const sendMail = (args) => {
+var sendMail = function (args) {
     console.log('sendMail:', args);
 };
 
-const sendMailHTML = (args) => {
+var sendMailHTML = function (args) {
     console.log('sendMailHTML:', args);
 };
 

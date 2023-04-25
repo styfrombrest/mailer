@@ -16,7 +16,7 @@ const config = [
     input: 'build/index.d.ts',
     output: {
       file: './dist/mailer.d.ts',
-      format: 'es'
+      format: 'esm'
     },
     plugins: [dts()]
   }

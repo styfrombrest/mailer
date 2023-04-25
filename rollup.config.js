@@ -14,7 +14,7 @@ const config = [
       format: 'cjs',
       sourcemap: true,
     }],
-    // external: ['axios', 'os', 'url'],
+    external: ['nodemailer'],
     plugins: [typescript()]
   }, {
     input: 'build/index.d.ts',

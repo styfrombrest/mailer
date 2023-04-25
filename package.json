@@ -4,7 +4,7 @@
   "description": "NodeJS mailer",
   "type": "module",
   "main": "dist/mailer.сjs",
-  "module": "dist/mailer.ьjs",
+  "module": "dist/mailer.mjs",
   "types": "dist/mailer.d.ts",
   "files": [
     "dist/mailer.d.ts",

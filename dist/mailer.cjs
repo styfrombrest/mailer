@@ -22,10 +22,5 @@ var sendMail = function (config, mailOptions) {
     });
 };
 
-var sendMailHTML = function (args) {
-    console.log('sendMailHTML:', args);
-};
-
 exports.sendMail = sendMail;
-exports.sendMailHTML = sendMailHTML;
 //# sourceMappingURL=mailer.cjs.map

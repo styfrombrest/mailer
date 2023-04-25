@@ -5,8 +5,9 @@ interface IMailOptions {
     to: string;
     subject?: string;
     text: string;
+    html?: string;
 }
-interface ISendmailerOptions {
+interface ISendMailerOptions {
     host: string;
     port: number;
     secure?: boolean;
@@ -15,8 +16,7 @@ interface ISendmailerOptions {
         pass: string;
     };
 }
-declare const sendMail: (config: ISendmailerOptions, mailOptions: IMailOptions) => Promise<SMTPTransport.SentMessageInfo>;
 
-declare const sendMailHTML: (args: string[]) => void;
+declare const sendMail: (config: ISendMailerOptions, mailOptions: IMailOptions) => Promise<SMTPTransport.SentMessageInfo>;
 
-export { IMailOptions, ISendmailerOptions, sendMail, sendMailHTML };
+export { IMailOptions, ISendMailerOptions, sendMail };

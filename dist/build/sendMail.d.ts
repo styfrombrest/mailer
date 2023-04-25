@@ -1,11 +1,11 @@
 import * as SMTPTransport from "nodemailer/lib/smtp-transport";
-interface IMailOptions {
+export interface IMailOptions {
     from: string;
     to: string;
     subject?: string;
     text: string;
 }
-interface ISendmailerOptions {
+export interface ISendmailerOptions {
     host: string;
     port: number;
     secure?: boolean;
@@ -15,4 +15,3 @@ interface ISendmailerOptions {
     };
 }
 export declare const sendMail: (config: ISendmailerOptions, mailOptions: IMailOptions) => Promise<SMTPTransport.SentMessageInfo>;
-export {};

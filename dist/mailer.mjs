@@ -9,7 +9,6 @@ var sendMail = function (config, mailOptions) {
             }
             transporter.sendMail(mailOptions, function (error, info) {
                 if (error) {
-                    console.error(error);
                     reject(error);
                 }
                 resolve(info);

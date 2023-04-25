@@ -19,4 +19,4 @@ declare const sendMail: (config: ISendmailerOptions, mailOptions: IMailOptions) 
 
 declare const sendMailHTML: (args: string[]) => void;
 
-export { sendMail, sendMailHTML };
+export { IMailOptions, ISendmailerOptions, sendMail, sendMailHTML };

@@ -1,24 +1,9 @@
 import {createTransport} from 'nodemailer';
 import * as SMTPTransport from "nodemailer/lib/smtp-transport";
+import {IMailOptions, ISendMailerOptions} from "./types";
 
-export interface IMailOptions {
-  from: string;
-  to: string;
-  subject?: string;
-  text: string;
-}
 
-export interface ISendmailerOptions {
-  host: string;
-  port: number;
-  secure?: boolean;
-  auth: {
-    user: string;
-    pass: string;
-  }
-}
-
-export const sendMail = (config: ISendmailerOptions, mailOptions: IMailOptions): Promise<SMTPTransport.SentMessageInfo> => {
+export const sendMail = (config: ISendMailerOptions, mailOptions: IMailOptions): Promise<SMTPTransport.SentMessageInfo> => {
   return new Promise((resolve, reject) => {
     try {
       const transporter = createTransport(config);

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "NodeJS mailer",
   "type": "module",
-  "main": "dist/mailer.js",
+  "main": "dist/mailer.сjs",
+  "module": "dist/mailer.ьjs",
   "types": "dist/mailer.d.ts",
   "files": [
     "dist/mailer.d.ts",

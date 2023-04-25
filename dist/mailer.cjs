@@ -1,3 +1,5 @@
+'use strict';
+
 var sendMail = function (args) {
     console.log('sendMail:', args);
 };
@@ -6,5 +8,6 @@ var sendMailHTML = function (args) {
     console.log('sendMailHTML:', args);
 };
 
-export { sendMail, sendMailHTML };
-//# sourceMappingURL=mailer.js.map
+exports.sendMail = sendMail;
+exports.sendMailHTML = sendMailHTML;
+//# sourceMappingURL=mailer.cjs.map

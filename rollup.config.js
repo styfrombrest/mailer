@@ -5,11 +5,15 @@ import dts from "rollup-plugin-dts";
 const config = [
   {
     input: 'build/index.js',
-    output: {
-      file: './dist/mailer.js',
+    output: [{
+      file: './dist/mailer.mjs',
       format: 'esm',
       sourcemap: true,
-    },
+    },{
+      file: './dist/mailer.cjs',
+      format: 'cjs',
+      sourcemap: true,
+    }],
     // external: ['axios', 'os', 'url'],
     plugins: [typescript()]
   }, {

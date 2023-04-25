@@ -7,9 +7,7 @@
   "module": "dist/mailer.mjs",
   "types": "dist/mailer.d.ts",
   "files": [
-    "dist/mailer.d.ts",
-    "dist/mailer.js",
-    "dist/mailer.js.map"
+    "dist/"
   ],
   "scripts": {
     "_clear": "rimraf build/compiled/*",

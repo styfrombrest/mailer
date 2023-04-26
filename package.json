@@ -20,7 +20,6 @@
     "type": "git",
     "url": "git+https://github.com/styfrombrest/mailer.git"
   },
-  "private": true,
   "author": "Taras <sty.brest@gmail.com>",
   "license": "ISC",
   "bugs": {

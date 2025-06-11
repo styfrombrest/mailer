@@ -15,7 +15,10 @@ const config = [
       sourcemap: true,
     }],
     external: ['nodemailer'],
-    plugins: [typescript()]
+    plugins: [typescript({
+      tsconfig: './tsconfig.json',
+      outDir: './dist'
+    })]
   }, {
     input: 'build/index.d.ts',
     output: {

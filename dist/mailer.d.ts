@@ -19,4 +19,5 @@ interface ISendMailerOptions {
 
 declare const sendMail: (config: ISendMailerOptions, mailOptions: IMailOptions) => Promise<SMTPTransport.SentMessageInfo>;
 
-export { IMailOptions, ISendMailerOptions, sendMail };
+export { sendMail };
+export type { IMailOptions, ISendMailerOptions };

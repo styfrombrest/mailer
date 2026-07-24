@@ -1,13 +1,13 @@
 import { createTransport } from 'nodemailer';
 
-var sendMail = function (config, mailOptions) {
-    return new Promise(function (resolve, reject) {
+const sendMail = (config, mailOptions) => {
+    return new Promise((resolve, reject) => {
         try {
-            var transporter = createTransport(config);
+            const transporter = createTransport(config);
             if (!mailOptions.to || !mailOptions.from) {
                 reject('missing required mailOptions');
             }
-            transporter.sendMail(mailOptions, function (error, info) {
+            transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {
                     reject(error);
                 }

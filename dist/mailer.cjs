@@ -2,14 +2,14 @@
 
 var nodemailer = require('nodemailer');
 
-var sendMail = function (config, mailOptions) {
-    return new Promise(function (resolve, reject) {
+const sendMail = (config, mailOptions) => {
+    return new Promise((resolve, reject) => {
         try {
-            var transporter = nodemailer.createTransport(config);
+            const transporter = nodemailer.createTransport(config);
             if (!mailOptions.to || !mailOptions.from) {
                 reject('missing required mailOptions');
             }
-            transporter.sendMail(mailOptions, function (error, info) {
+            transporter.sendMail(mailOptions, (error, info) => {
                 if (error) {
                     reject(error);
                 }

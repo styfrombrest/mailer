@@ -106,3 +106,20 @@ git diff --check
 
 There is currently no test or lint script, so the build and package dry run are
 the available local release checks.
+
+### Known `npm audit` findings (release tooling)
+
+`npm audit` reports high-severity issues in `tar`, `ip-address`,
+`brace-expansion`, and `undici`. These are bundled dependencies of the `npm`
+CLI package itself (vendored inside its published tarball), pulled in
+transitively via `@semantic-release/npm`. They only affect the local/CI
+release pipeline, not the published `@styfrombrest/mailer` package.
+
+As of 2026-08-24, there is no fix available: `npm@12.0.2` (the latest npm CLI
+release) still bundles the same vulnerable versions (`tar@7.5.19`,
+`ip-address@10.2.0`, `undici@6.27.0`, `brace-expansion@5.0.7`), confirmed by
+inspecting its published tarball directly. `npm audit`'s suggested fix
+(`@semantic-release/npm@12.0.2`) actually pins an *older* npm CLI
+(`^10.9.3`) and would be a downgrade with no security benefit — do not apply
+`npm audit fix --force` for this. Re-check once the npm CLI project ships a
+patched release.

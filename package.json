@@ -53,6 +53,6 @@
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.24",
-    "nodemailer": "^7.0.13"
+    "nodemailer": "^9.0.5"
   }
 }
